@@ -1,11 +1,16 @@
 import sys
 import config.config as config
 
-def main() -> None:
+def main():
     args = sys.argv
-
     if len(args) >= 2:
-        print(config.read())
+        name = args[1]
+        scripts = config.read()
+
+        if name in scripts:
+            print(scripts[name])
+        else:
+            print("Script not found")
     else:
         print(
             """
