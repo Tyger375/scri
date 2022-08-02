@@ -1,2 +1,2 @@
-hello: echo "Hello Word!"
-send: echo
+compile: pyinstaller --onefile src/main.py
+ciao: echo
