@@ -1,4 +1,5 @@
 import sys
+import os
 import config.config as config
 
 def main():
@@ -8,7 +9,7 @@ def main():
         scripts = config.read()
 
         if name in scripts:
-            print(scripts[name])
+            os.system(scripts[name])
         else:
             print("Script not found")
     else:

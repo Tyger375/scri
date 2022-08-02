@@ -1,1 +1,1 @@
-start: python3 src/main.py
+hello: echo "Hello Word!"
