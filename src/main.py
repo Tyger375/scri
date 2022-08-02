@@ -10,6 +10,7 @@ def main():
         scripts = config.read()
 
         if name in scripts:
+            print(colors["dimmed"] + f"$ {scripts[name]}" + colors["reset"])
             os.system(scripts[name])
         else:
             print("Script not found")
@@ -19,7 +20,7 @@ def main():
 {colors["bold"]}How to use scri{colors["reset"]}
 
 {colors["bold"]}1){colors["reset"]} Create a file named .scrirc in your project directory
-{colors["bold"]}2){colors["reset"]} Add scripts to the .scrirc file (scri --init to initialize)
+{colors["bold"]}2){colors["reset"]} Add scripts to the .scrirc file (Example: script_name: command)
 {colors["bold"]}3){colors["reset"]} Run the script: scri <script name>
             """
         )

@@ -14,5 +14,6 @@ colors = {
     "blink": "\033[5m",
     "reverse": "\033[7m",
     "hidden": "\033[8m",
-    "strike": "\033[9m"
+    "strike": "\033[9m",
+    "dimmed": "\033[2m",
 }
