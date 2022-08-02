@@ -19,12 +19,8 @@ def main():
 {colors["bold"]}How to use scri{colors["reset"]}
 
 {colors["bold"]}1){colors["reset"]} Create a file named .scrirc in your project directory
-{colors["bold"]}2){colors["reset"]} Add scripts to the .scrirc file
-    .srcirc file format:
-    - script_name: command
-            
-{colors["bold"]}3){colors["reset"]} Run the script:
-    scri script_name
+{colors["bold"]}2){colors["reset"]} Add scripts to the .scrirc file (scri --init to initialize)
+{colors["bold"]}3){colors["reset"]} Run the script: scri <script name>
             """
         )
 
