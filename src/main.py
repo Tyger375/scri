@@ -10,8 +10,13 @@ def main():
         scripts = config.read()
 
         if name in scripts:
-            print(colors["dimmed"] + f"$ {scripts[name]}" + colors["reset"])
-            os.system(scripts[name])
+            toRun = scripts[name]
+            for arg in args[2:]:
+                toRun += " " + arg
+
+            print(colors["dimmed"] +
+                  f"$ {toRun}" + colors["reset"])
+            os.system(toRun)
         else:
             print("Script not found")
     else:
