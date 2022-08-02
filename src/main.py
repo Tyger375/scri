@@ -1,6 +1,7 @@
 import sys
 import os
 import config.config as config
+from utils.colors import colors
 
 def main():
     args = sys.argv
@@ -14,15 +15,15 @@ def main():
             print("Script not found")
     else:
         print(
-            """
-How to use scri
+            f"""
+{colors["bold"]}How to use scri{colors["reset"]}
 
-1) Create a file named .scrirc in your project directory
-2) Add scripts to the .scrirc file
+{colors["bold"]}1){colors["reset"]} Create a file named .scrirc in your project directory
+{colors["bold"]}2){colors["reset"]} Add scripts to the .scrirc file
     .srcirc file format:
     - script_name: command
             
-3) Run the script:
+{colors["bold"]}3){colors["reset"]} Run the script:
     scri script_name
             """
         )
