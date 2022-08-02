@@ -6,6 +6,16 @@ Make scripts for your project
 
 How to use scri? Read this guide!
 
+#### Install
+
+```bash
+git clone https://github.com/aThebigbot/scri
+```
+
+```bash
+sh setup.sh
+```
+
 #### Create config
 
 Create config file (.scrirc)
