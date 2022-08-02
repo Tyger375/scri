@@ -18,7 +18,7 @@ def main():
                   f"$ {toRun}" + colors["reset"])
             os.system(toRun)
         else:
-            print("Script not found")
+            print(f"{colors['red']}Error: {name} is not a valid script name{colors['reset']}")
     else:
         print(
             f"""
